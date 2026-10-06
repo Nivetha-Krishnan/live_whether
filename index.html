@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Live Weather Dashboard</h1>
+    <p class="sub">Search any city for current weather and a 5-day forecast.</p>
+
+    <form class="search" id="search-form" novalidate>
+      <input id="city-input" type="text" placeholder="Enter city name (e.g. Chennai)"
+             autocomplete="off" aria-label="City name" aria-describedby="field-error" />
+      <button id="search-btn" type="submit">Search</button>
+    </form>
+    <p class="field-error" id="field-error" role="alert"></p>
+
+    <section id="output" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
